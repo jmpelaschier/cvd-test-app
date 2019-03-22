@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <h1> MY WEBSITE</h1>
+    <div>
+        <select id="test-select" name="dashboardView">
+            <option value="0">Home</option>
+            <option value="1">Google</option>
+            <option value="2">yahoo</option>
+        </select>
+    </div>
+
+</body>
+<script>
+    let select = $('#test-select');
+    select.change(
+        _ => {
+            switch (select.val()) {
+                case '0':
+                    console.log('your home');
+                    break;
+                case '1':
+                    window.open('https://www.google.com/', '_blank');
+                    break;
+                case '2':
+                    window.open('https://www.yahoo.com/', '_blank');
+                    break;
+
+            }
+        }
+    )
+</script>
+
+</html>
