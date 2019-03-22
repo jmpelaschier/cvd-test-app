@@ -32,10 +32,20 @@
                     console.log('your home');
                     break;
                 case '1':
-                    window.open('https://www.google.com/', '_blank');
+                    setTimeout(
+                        _ => {
+                            window.open('https://www.google.com/', '_blank');
+                        },
+                        1
+                    )
                     break;
                 case '2':
-                    window.open('https://www.yahoo.com/', '_blank');
+                    setTimeout(
+                        _ => {
+                            window.open('https://www.yahoo.com/', '_blank');
+                        },
+                        1
+                    )
                     break;
 
             }
